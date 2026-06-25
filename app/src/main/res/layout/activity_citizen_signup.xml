@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_signup.xml -->
+<!-- activity_signup.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@drawable/backgroung"
+    tools:context=".CitizenSignup">
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_marginTop="5dp"
+            android:layout_width="500dp"
+            android:layout_marginLeft="0dp"
+            android:layout_height="200dp"
+            app:lottie_autoPlay="true"
+            android:id="@+id/l1"
+            app:lottie_cacheComposition="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/csignup"
+            app:lottie_speed="1"
+            >  </com.airbnb.lottie.LottieAnimationView>
+        <TableLayout
+            android:id="@+id/tableLayoutSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:stretchColumns="*">
+
+                <!-- Row 1: Name -->
+                <TableRow android:layout_marginTop="8dp">
+                        <TextView
+                            android:text="Name"
+                            android:layout_column="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="8dp" />
+                        <EditText
+                            android:id="@+id/editTextName"
+                            android:layout_column="2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter your name"
+                            android:inputType="textPersonName" />
+                </TableRow>
+
+                <!-- Row 2: Mobile Number -->
+                <TableRow android:layout_marginTop="8dp">
+                        <TextView
+                            android:text="Mobile Number"
+                            android:layout_column="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="8dp" />
+                        <EditText
+                            android:id="@+id/editTextMobile"
+                            android:layout_column="2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter your mobile number"
+                            android:inputType="phone" />
+                </TableRow>
+
+                <!-- Row 3: Password -->
+                <TableRow android:layout_marginTop="8dp">
+                        <TextView
+                            android:text="Password"
+                            android:layout_column="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="8dp" />
+                        <EditText
+                            android:id="@+id/editTextPassword"
+                            android:layout_column="2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:hint="Enter your password"
+                            android:inputType="textPassword" />
+                </TableRow>
+
+                <!-- Row 4: Confirm Password -->
+                <TableRow android:layout_marginTop="8dp">
+                        <TextView
+                            android:text="Confirm Password"
+                            android:layout_column="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="8dp" />
+                        <EditText
+                            android:id="@+id/editTextConfirmPassword"
+                            android:layout_column="2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Confirm your password"
+                            android:inputType="textPassword" />
+                </TableRow>
+
+                <!-- Row 5: Sign Up Button -->
+                <TableRow android:layout_marginTop="15dp">
+                        <Button
+                            android:id="@+id/buttonSignUp"
+                            android:layout_column="2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Sign Up"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:textSize="35sp"
+                            android:onClick="onSignUpButtonClick" />
+                </TableRow>
+
+        </TableLayout>
+
+</RelativeLayout>

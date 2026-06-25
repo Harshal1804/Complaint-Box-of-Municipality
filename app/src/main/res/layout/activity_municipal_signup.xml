@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_main.xml -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/backgroung"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+    <com.airbnb.lottie.LottieAnimationView
+    android:layout_marginTop="5dp"
+    android:layout_width="500dp"
+    android:layout_marginLeft="-40dp"
+    android:layout_height="200dp"
+    app:lottie_autoPlay="true"
+    android:id="@+id/l1"
+    app:lottie_cacheComposition="true"
+    app:lottie_loop="true"
+    app:lottie_rawRes="@raw/msignup"
+    app:lottie_speed="1"
+    >
+    </com.airbnb.lottie.LottieAnimationView>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:textSize="30dp"
+    android:text="New Municipal Registration">
+
+</TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="20dp"
+        android:text="Select Your Country">
+    </TextView>
+    <Spinner
+        android:id="@+id/spinnerState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/select_state"/>
+<EditText
+    android:id="@+id/cname"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:hint="Enter city name">
+</EditText>
+    <EditText
+        android:id="@+id/pincode"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:inputType="number"
+        android:hint="Enter pincode">
+    </EditText>
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Enter email id">
+    </EditText>
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:inputType="number"
+        android:hint="Enter Mobile no">
+    </EditText>
+    <EditText
+        android:id="@+id/pass"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Enter password">
+    </EditText>
+    <EditText
+        android:id="@+id/cpass"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Enter confirm password">
+    </EditText>
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Submit">
+    </Button>
+</LinearLayout>
+</ScrollView>

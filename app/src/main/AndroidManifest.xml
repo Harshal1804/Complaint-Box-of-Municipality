@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Complaint Box Of Municipality"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KhaddaMuktaBharat"
+        tools:targetApi="31">
+        <activity
+            android:name=".TPActivty"
+            android:exported="false" />
+        <activity
+            android:name=".DetailedReviewCheckedByMunicipal"
+            android:exported="false" />
+        <activity
+            android:name=".SeeComplaintRequestByCitizen"
+            android:exported="false" />
+        <activity
+            android:name=".CheckDetailReviewSendByCitizen"
+            android:exported="false" />
+        <activity
+            android:name=".MunicipalLoginPage"
+            android:exported="false" />
+        <activity
+            android:name=".CheckFeedback"
+            android:exported="false" />
+        <activity
+            android:name=".CheckYourComplaintReview"
+            android:exported="false" />
+        <activity
+            android:name=".CheckRequestByMunicipal"
+            android:exported="false" />
+        <activity
+            android:name=".CommonPageToAll"
+            android:exported="false" />
+        <activity
+            android:name=".FeedbackForm"
+            android:exported="false" />
+        <activity
+            android:name=".CheckYourRequest"
+            android:exported="false" />
+        <activity
+            android:name=".ContactUS"
+            android:exported="false" />
+        <activity
+            android:name=".MunicipalSignup"
+            android:exported="false" />
+        <activity
+            android:name=".CitizenSignup"
+            android:exported="false" />
+        <activity
+            android:name=".MunicipalFirstPage"
+            android:exported="false" />
+        <activity
+            android:name=".CitizenFirstPage"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

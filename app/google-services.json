@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "405676157305",
+    "project_id": "complaintbox-dab11",
+    "storage_bucket": "complaintbox-dab11.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:405676157305:android:4c729132a79022815fe7a8",
+        "android_client_info": {
+          "package_name": "com.example.khaddamuktabharat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxm3dyCFij2caXI0lEDJ-ma79d997dPSI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

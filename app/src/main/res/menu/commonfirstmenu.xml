@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Home_page"
+        android:title="Home" />
+    <item
+        android:id="@+id/Municipal_corporation"
+        android:title="Municipal_corporation"/>
+    <item android:id="@+id/CitizenLogin"
+        android:title="Citizen"/>
+    <item android:id="@+id/FeedbackForm"
+        android:title="Feedback Form"/>
+    <item android:id="@+id/ContactUS"
+        android:title="Contact Us"/>
+</menu>

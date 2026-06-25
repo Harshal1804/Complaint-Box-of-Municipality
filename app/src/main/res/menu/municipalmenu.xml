@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Home_page"
+        android:title="Home" />
+    <item
+        android:id="@+id/CheckRequest"
+        android:title="Check Request"/>
+    <item
+        android:id="@+id/CheckFeedback"
+        android:title="Check Feedback"/>
+
+    <item android:id="@+id/Logout"
+        android:title="Logout"/>
+
+</menu>
